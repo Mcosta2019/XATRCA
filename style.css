@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  background-size: cover; /* Ajusta o tamanho do background para cobrir toda a tela */
+  background-size: cover; /* Ajusta o tamanho cobrir toda a tela */
   background-position: center; /* Centraliza a imagem do background */
 }
 
@@ -15,13 +15,13 @@ body {
 }
 
 .moon {
-  width: 600px;
-  height: 600px;
+  width: 30%; /* Tamanho relativo à largura da tela */
+  padding-top: 30%; /* Tamanho relativo à largura da tela */
   background-color: #ffff40; /* Amarelo */
   border-radius: 50%;
   position: absolute;
-  top: 50px;
-  left: 50%;
+  top: 5%; /* Posição relativa à altura da tela */
+  left: 50%; /* Centraliza horizontalmente */
   transform: translateX(-50%);
   animation: moonGlow 10s infinite alternate;
 }
@@ -36,14 +36,11 @@ body {
 }
 
 .castle {
-  top: -50px;
-  left: 80%;
-  width: 100px;
-  height: 100px;
- /* background-image: url('https://xatimg.com/image/juvZDPejaFsO.png');
- /* background-color: #333333; /* Cinza escuro para o castelo */
+  width: 10%; /* Tamanho relativo à largura da tela */
+  padding-top: -10%; /* Tamanho relativo à largura da tela */
   position: absolute;
-  bottom: 0;
+  top: 0%; /* Posição relativa à altura da tela */
+  left: 50%; /* Centraliza horizontalmente */
   transform: translateX(-100%);
   /* Adicione estilos adicionais para o castelo, como torres e janelas */
 }
@@ -59,15 +56,15 @@ body {
 
  [class*="spider"] {
   position: absolute;
-  height: 40px;
-  width: 50px;
+  width: 50%; /* Tamanho relativo à largura da tela */
+  padding-top: 60%; /* Tamanho relativo à largura da tela */
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   margin: 40px 0 0 0;
   background: #030202;
-  top: 10px;
-  left: -900px;
+  top: -10%; /* Posição relativa à altura da tela */
+  left: -1000%; /* Centraliza horizontalmente */
 }
 
 [class*="spider"] *, [class*="spider"]:before, [class*="spider"]:after, [class*="spider"] :after, [class*="spider"] :before {
@@ -282,8 +279,7 @@ body {
   #BUBBLELINE2 { animation: flicker 6s infinite 2s step-end; }
   #BUBBLELINE3 { animation: flicker 6s infinite 3s step-end; }
 
-/*   Radio Kimera */ 
-/* Estilos para o texto "Radio Kimera" */
+/*   Radio Kimera texto*/ 
 .radio {
   position: absolute;
   top: 50px; /* Ajuste a posição vertical conforme necessário */
@@ -305,7 +301,7 @@ body {
   }
 }
 
-/* Estilo para o texto "Radio" em amarelo */
+/* Estilo para o texto "Radio" */
 .radio-text {
   color: orange;
   font-size: 100px; /* Tamanho da fonte */
@@ -320,18 +316,7 @@ body {
  /* transform: translateX(-50%);*/
   text-shadow: 5px 5px 0 black; /* Adiciona contorno preto */
   transform: rotate(-10deg); /* Rotação de 45 graus */
-  animation: blink 5s infinite; /* Aplica animação de cintilação */
-}
-@keyframes blink {
-  0% {
-    opacity: 1; /* Início da animação, texto visível */
-  }
-  50% {
-    opacity: 0; /* Meio da animação, texto invisível */
-  }
-  100% {
-    opacity: 1; /* Fim da animação, texto visível novamente */
-  }
+  animation: kimera 5s infinite; /* Aplica animação de cintilação */
 }
 /* Estilo para o texto "Kimera" em verde */
 .kimera-text {
@@ -340,4 +325,22 @@ body {
   font-weight: bold; /* Negrito */
   padding: 5px; /* Espaçamento interno */
   margin-left: 5px; /* Espaçamento à esquerda */
+}
+
+@keyframes kimera {
+  0% {
+    opacity: 1; /* Início da animação, texto visível */
+  }
+  25% {
+    opacity: 0; /* Meio da animação, texto invisível */
+  }
+  50% {
+    opacity: 1; /* Fim da animação, texto visível novamente */
+  }
+  75% {
+    opacity: 0; /* Fim da animação, texto visível novamente */
+  }
+  100% {
+    opacity: 1; /* Fim da animação, texto visível novamente */
+  }
 }
