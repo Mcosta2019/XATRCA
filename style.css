@@ -20,7 +20,7 @@ body {
   background-color: #ffff40; /* Amarelo */
   border-radius: 50%;
   position: absolute;
-  top: 5%; /* Posição relativa à altura da tela */
+  top: 15%; /* Posição relativa à altura da tela */
   left: 50%; /* Centraliza horizontalmente */
   transform: translateX(-50%);
   animation: moonGlow 10s infinite alternate;
