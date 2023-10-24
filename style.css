@@ -66,8 +66,8 @@ body {
 }
  [class*="spider"] {
   position: absolute;
-  height: 40px;
-  width: 50px;
+  height: 20px;
+  width: 30px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
