@@ -55,15 +55,17 @@ body {
 }
 
 /*  Aranha */
+
 .spider_4 {
   right: 10%;
   margin-top: 50vh;
   -moz-animation: spider-move-4 5s infinite;
   -webkit-animation: spider-move-4 5s infinite;
   animation: spider-move-4 5s infinite;
-  width: 50%; /* Tamanho relativo à largura da tela */
+  width: 10%; /* Tamanho relativo à largura da tela */
   padding-top: 10%; /* Tamanho relativo à largura da tela */
 }
+
  [class*="spider"] {
   position: absolute;
   height: 20px;
@@ -236,6 +238,7 @@ body {
   }
 }
 
+
 @-moz-keyframes spider-move-4 {
   0%, 100% {
     margin-top: 222px;
@@ -280,8 +283,8 @@ body {
 /*   Radio Kimera texto*/ 
 .radio {
   position: absolute;
-  top: 50px; /* Ajuste a posição vertical conforme necessário */
-  left: -800%; /* Centralize horizontalmente */
+  top: -150px; /* Ajuste a posição vertical conforme necessário */
+  left: -500%; /* Centralize horizontalmente */
  /* transform: translateX(-50%);*/
   text-shadow: 5px 5px 0 black; /* Adiciona contorno preto */
   transform: rotate(-10deg); /* Rotação de 45 graus */
@@ -309,8 +312,8 @@ body {
 }
 .kimera {
   position: absolute;
-  top: 90px; /* Ajuste a posição vertical conforme necessário */
-  left: -650%; /* Centralize horizontalmente */
+  top: -100px; /* Ajuste a posição vertical conforme necessário */
+  left: -400%; /* Centralize horizontalmente */
  /* transform: translateX(-50%);*/
   text-shadow: 5px 5px 0 black; /* Adiciona contorno preto */
   transform: rotate(-10deg); /* Rotação de 45 graus */
