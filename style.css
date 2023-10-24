@@ -37,7 +37,7 @@ body {
 
 .castle {
   width: 10%; /* Tamanho relativo à largura da tela */
-  padding-top: -10%; /* Tamanho relativo à largura da tela */
+  padding-top: 20%; /* Tamanho relativo à largura da tela */
   position: absolute;
   top: 30%; /* Posição relativa à altura da tela */
   left: 50%; /* Centraliza horizontalmente */
