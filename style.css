@@ -20,7 +20,7 @@ body {
   background-color: #ffff40; /* Amarelo */
   border-radius: 50%;
   position: absolute;
-  top: 15%; /* Posição relativa à altura da tela */
+  top: 5%; /* Posição relativa à altura da tela */
   left: 50%; /* Centraliza horizontalmente */
   transform: translateX(-50%);
   animation: moonGlow 10s infinite alternate;
@@ -54,17 +54,29 @@ body {
   /* Adicione estilos adicionais para as árvores ou outros elementos do cenário */
 }
 
+/*  Aranha */
+
+.spider_4 {
+  right: 10%;
+  margin-top: 50vh;
+  -moz-animation: spider-move-4 5s infinite;
+  -webkit-animation: spider-move-4 5s infinite;
+  animation: spider-move-4 5s infinite;
+  width: 10%; /* Tamanho relativo à largura da tela */
+  padding-top: 10%; /* Tamanho relativo à largura da tela */
+}
+
  [class*="spider"] {
   position: absolute;
-  width: 50%; /* Tamanho relativo à largura da tela */
-  padding-top: 60%; /* Tamanho relativo à largura da tela */
+  height: 40px;
+  width: 50px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   margin: 40px 0 0 0;
   background: #030202;
-  top: -10%; /* Posição relativa à altura da tela */
-  left: -1000%; /* Centraliza horizontalmente */
+  top: -5%; /* Posição relativa à altura da tela */
+  left: -600%;
 }
 
 [class*="spider"] *, [class*="spider"]:before, [class*="spider"]:after, [class*="spider"] :after, [class*="spider"] :before {
@@ -197,14 +209,6 @@ body {
   animation: legs-wriggle-right 1s 0.3s infinite;
 }
 
-
-.spider_4 {
-  right: 10.2%;
-  margin-top: 50px;
-  -moz-animation: spider-move-4 5s infinite;
-  -webkit-animation: spider-move-4 5s infinite;
-  animation: spider-move-4 5s infinite;
-}
 @-webkit-keyframes legs-wriggle-left {
   0%, 100% {
     -webkit-transform: rotate(36deg) skewX(-20deg);
