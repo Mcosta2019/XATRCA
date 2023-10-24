@@ -39,7 +39,7 @@ body {
   width: 10%; /* Tamanho relativo à largura da tela */
   padding-top: -10%; /* Tamanho relativo à largura da tela */
   position: absolute;
-  top: 10%; /* Posição relativa à altura da tela */
+  top: 30%; /* Posição relativa à altura da tela */
   left: 50%; /* Centraliza horizontalmente */
   transform: translateX(-100%);
   /* Adicione estilos adicionais para o castelo, como torres e janelas */
