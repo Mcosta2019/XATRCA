@@ -7,6 +7,8 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #FF6600; /* Laranja */
+  background-size: cover; /* Ajusta o tamanho cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem do background */
   position: relative;
 }
 
