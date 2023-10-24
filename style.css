@@ -55,7 +55,15 @@ body {
 }
 
 /*  Aranha */
-
+.spider_4 {
+  right: 10%;
+  margin-top: 50vh;
+  -moz-animation: spider-move-4 5s infinite;
+  -webkit-animation: spider-move-4 5s infinite;
+  animation: spider-move-4 5s infinite;
+  width: 50%; /* Tamanho relativo à largura da tela */
+  padding-top: 10%; /* Tamanho relativo à largura da tela */
+}
  [class*="spider"] {
   position: absolute;
   height: 40px;
@@ -228,15 +236,6 @@ body {
   }
 }
 
-.spider_4 {
-  right: 10%;
-  margin-top: 50vh;
-  -moz-animation: spider-move-4 5s infinite;
-  -webkit-animation: spider-move-4 5s infinite;
-  animation: spider-move-4 5s infinite;
-  width: 10%; /* Tamanho relativo à largura da tela */
-  padding-top: 10%; /* Tamanho relativo à largura da tela */
-}
 @-moz-keyframes spider-move-4 {
   0%, 100% {
     margin-top: 222px;
